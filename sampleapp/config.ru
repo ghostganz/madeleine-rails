@@ -1,7 +1,5 @@
 # This file is used by Rack-based servers to start the application.
 
-$LOAD_PATH.push '../lib'
-
 trap("SIGHUP") do
   Thread.list.each do |t|
     puts "---------------"
