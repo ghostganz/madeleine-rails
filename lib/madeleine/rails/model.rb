@@ -15,8 +15,8 @@ module Madeleine
 
       def self.all
         system = Thread.current[:_madeleine_system]
-        system[model_name.to_s] ||= []
-        system[model_name.to_s]
+        system[model_name.to_s.downcase] ||= []
+        system[model_name.to_s.downcase]
       end
 
       def self.find(id_to_find)

@@ -1,4 +1,4 @@
-class Post
+class Post < Madeleine::Rails::Model
   attr :id
   attr :body
   attr :published
